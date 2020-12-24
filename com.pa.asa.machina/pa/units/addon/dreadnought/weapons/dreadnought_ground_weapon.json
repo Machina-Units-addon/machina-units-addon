@@ -1,0 +1,28 @@
+{
+    "range_height": 400,
+    "tool_type": "TOOL_Weapon",
+    "target_priorities": [
+      "Mobile - Air",
+      "Naval",
+      "Structure - Wall",
+      "Wall"
+    ],
+    "ammo_id": "/pa/units/addon/dreadnought/ammo/dreadnought_ground_ammo.json",
+    "rate_of_fire": 1,
+    "max_range": 400,
+    "yaw_rate": 400,
+    "pitch_rate": 400,
+    "yaw_range": 400,
+    "pitch_range": 400,
+  
+    "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
+    "auto_attack": true,
+    "spread_fire": true,
+    "firing_standard_deviation": 1,
+    "target_layers": [
+      "WL_LandHorizontal",
+      "WL_Seafloor",
+      "WL_WaterSurface"
+    ],
+    "fire_delay": 1
+}

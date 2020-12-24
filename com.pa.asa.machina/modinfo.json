@@ -1,0 +1,102 @@
+{
+  "author": "Asa",
+  "build": "115186",
+  "context": "server",
+  "date": "2020-12-24",
+  "description": "Machina aims to add new structures and units to mix up the later and earlier stages of a game.",
+  "display_name": "Machina - Units addon",
+  "forum": "not yet implemented",
+  "identifier": "com.pa.asa.machina",
+  "signature": "not yet implemented",
+  "version": "1.0.0",
+  "titansOnly": true,
+  "scenes": {
+
+      "shared_build": [
+        "coui://ui/mods/com.pa.asa.machina/shared_build.js"
+      ],
+
+      "icon_atlas": [
+        "coui://ui/mods/com.pa.asa.machina/icon_atlas.js"
+      ]
+
+  },
+  "unitList": {
+        "units": [
+          "/pa/units/addon/dreadnought/dreadnought.json",
+          "/pa/units/addon/railgun/railgun.json",
+          "/pa/units/addon/tactical_launcher/tactical_launcher.json",
+          "/pa/units/addon/orbital_battleship/orbital_battleship.json"
+        ],
+        "info": {
+          "/pa/units/addon/dreadnought/dreadnought.json": {
+            "unit": "/pa/units/addon/dreadnought/dreadnought.json",
+            "modIdentifier": "com.pa.asa.machina",
+            "infoDisplayName": "calamity addon",
+            "infoDescription": "calamity addon",
+            "sort": 500,
+            "searchable": [
+              "dreadnought",
+              "addon",
+              "battleship"
+            ],
+            "buildBarImageFilename": "/community-mods/downloads/files/com.pa.asa.machina/pa/units/addon/dreadnought/dreadnought_icon_buildbar.png",
+            "classic": false,
+            "titans": false
+          },
+          "/pa/units/addon/railgun/railgun.json": {
+            "unit": "/pa/units/addon/railgun/railgun.json",
+            "modIdentifier": "com.pa.asa.machina",
+            "infoDisplayName": "calamity addon",
+            "infoDescription": "calamity addon",
+            "sort": 500,
+            "searchable": [
+              "railgun",
+              "addon",
+              "battleship"
+            ],
+            "buildBarImageFilename": "/community-mods/downloads/files/com.pa.asa.machina/pa/units/addon/railgun/railgun_icon_buildbar.png",
+            "classic": false,
+            "titans": false
+          },
+          "/pa/units/addon/tactical_launcher/tactical_launcher.json": {
+            "unit": "/pa/units/addon/tactical_launcher/tactical_launcher.json",
+            "modIdentifier": "com.pa.asa.machina",
+            "infoDisplayName": "Tactical-Missile Launcher",
+            "infoDescription": "Tactical-Missile Launcher.",
+            "sort": 500,
+            "searchable": [
+              "tactical",
+              "missile",
+              "launcher"
+            ],
+            "buildBarImageFilename": "/community-mods/downloads/files/com.pa.asa.machina/pa/units/addon/tactical_launcher/tactical_launcher_icon_buildbar.png",
+            "classic": false,
+            "titans": false
+          },
+          "/pa/units/addon/orbital_battleship/orbital_battleship.json":{
+            "unit": "/pa/units/addon/orbital_battleship/orbital_battleship.json",
+            "modIdentifier": "com.pa.asa.machina",
+            "infoDisplayName": "calamity addon",
+            "infoDescription": "calamity addon",
+            "sort": 500,
+            "buildBarImageFilename": "/pa/units/orbital/orbital_battleship/orbital_battleship_icon_buildbar.png",
+            "classic": false,
+            "titans": false
+          },
+          "/pa/units/addon/titan_sea/titan_sea.json":{
+            "unit": "/pa/units/addon/titan_sea/titan_sea.json",
+            "modIdentifier": "com.pa.asa.machina",
+            "infoDisplayName": "calamity addon",
+            "infoDescription": "calamity addon",
+            "sort": 500,
+            "buildBarImageFilename": "/community-mods/downloads/files/com.pa.asa.machina/pa/units/addon/titan_sea/titan_sea_icon_buildbar.png",
+            "classic": false,
+            "titans": false
+          }
+
+        }
+  },
+
+  "icon": "https://i.imgur.com/6z1x769.png"
+}

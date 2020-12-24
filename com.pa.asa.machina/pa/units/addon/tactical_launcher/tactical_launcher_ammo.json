@@ -1,0 +1,111 @@
+{
+    "display_name": "!LOC:LR-96 -Tactical- Missile",
+    "description": "!LOC:Tactical missile - Long range, tactical projectile",
+    "si_name": "tactical_launcher_ammo",
+    "has_notifications": false,
+    "ammo_type": "Projectile",
+    "build_metal_cost": 25000,
+    "flight_type": "Staged",
+    "damage": 10000,
+    "splash_damage": 10000,
+    "splash_radius": 50,
+    "full_damage_splash_radius": 0,
+    "splash_damages_allies": false,
+    "cruise_height": 16,
+    "initial_velocity": 150,
+    "max_velocity": 150,
+    "turn_rate": 1000,
+    "lifetime": 0,
+    "show_strategic_icon": true,
+    "system_velocity_multiplier": 20,
+    "gravwell_velocity_multiplier": 10,
+    "spawn_layers": "WL_Air",
+    "show_in_orbital_layer": false,
+    "splash_damage_orbital": false,
+    "enable_orbital_shell": true,
+    "burn_damage": 200,
+    "burn_radius": 0,
+    "influence_radius": 3200,
+    "sim_impact_effect": "/pa/units/addon/tactical_launcher/tactical_launcher_ammo_explosion_ent.json",
+    "impact_decals": [
+      "/pa/effects/specs/scorch_titan_01.json"
+    ],
+    "signal_type": "nuke",
+    "damage_volume": {
+      "initial_radius": 20,
+      "radius_velocity": 200,
+      "radius_accel": -40,
+      "delay": 1.5,
+      "burnable_remove_radius": 100
+    },
+    "model": {
+      "filename": "/pa/units/air/missile_nuke/missile_nuke.papa"
+    },
+    "unit_types": [
+      "UNITTYPE_Mobile"
+    ],
+    "collision_check": "ground",
+    "physics": {
+      "radius": 10,
+      "gravity_scalar": 3,
+      "ignore_gravity": true,
+      "add_to_spatial_db": true,
+      "allow_underground": true
+    },
+    "fx_trail": {
+      "filename": "/pa/effects/specs/shell_artillery_large_proj_trail.pfx",
+      "offset": [
+        0,
+        12,
+        0
+      ]
+    },
+    "events": {
+      "collided": {
+        "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
+        "effect_spec":"/pa/effects/specs/default_building_explosion.pfx",
+        "effect_scale": 1.5,
+        "effect_world_aligned": false
+      }
+    },
+    "armor_damage_map": {
+      "AT_Commander": 0.33
+    },
+    "stage_on_planet_handoff": 2,
+    "stages": [
+      {
+        "ignores_gravity": true,
+        "ignores_LOS": true,
+        "stage_duration": 600,
+        "stage_turn_rate": 0,
+        "rotates_to_velocity": true
+      },
+      {
+        "ignores_gravity": true,
+        "ignores_LOS": true,
+        "stage_duration": 0,
+        "stage_turn_rate": 90,
+        "stage_change_range": 75,
+        "rotates_to_velocity": true
+      },
+      {
+        "ignores_gravity": false,
+        "ignores_LOS": false,
+        "stage_duration": 5000,
+        "stage_turn_rate": 90,
+        "rotates_to_velocity": true
+      },
+      {
+        "ignores_gravity": false,
+        "ignores_LOS": false,
+        "stage_duration": 5000,
+        "stage_turn_rate": 1080,
+        "rotates_to_velocity": true
+      }
+    ],
+    "recon": {
+      "observable": {
+        "ignore_radar": false
+      }
+    }
+  }

@@ -1,0 +1,9 @@
+{
+  "unit_map": {
+
+    "Dreadnought": {
+      "spec_id": "/pa/units/addon/dreadnought/dreadnought.json"
+    }
+
+  }
+}

@@ -1,0 +1,118 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "display_name": "Orbital Defense Cannon",
+    "description": "!LOC:Orbital Defense Cannon - Massive anti-orbital railgun.",
+    "max_health": 15000,
+    "build_metal_cost": 60000,
+    "atrophy_rate": 240,
+    "atrophy_cool_down": 15,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_type": "Line",
+    "area_build_separation": 20,
+    "unit_types": [
+      "UNITTYPE_Land",
+      "UNITTYPE_Structure",
+      "UNITTYPE_Defense",
+      "UNITTYPE_Artillery",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_FabAdvBuild",
+      "UNITTYPE_Important"
+    ],
+    "command_caps": [
+      "ORDER_Attack"
+    ],
+    "guard_layer": "WL_AnySurface",
+    "recon": {
+      "observable": {
+        "always_visible": true
+      },
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 110
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 110
+          }
+        ]
+      }
+    },
+    "model": [
+      {
+        "layer": "WL_LandHorizontal",
+        "filename": "/pa/units/addon/railgun/railgun.papa",
+        "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json",
+        "skirt_decal": "/pa/effects/specs/skirt_artillery_long.json"
+      },
+      {
+        "layer": "WL_WaterSurface",
+        "filename": "/pa/units/addon/railgun/railgun_water.papa",
+        "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json"
+      }
+    ],
+    "nearby_target_tick_update_interval": 400,
+    "tools": [
+      {
+        "spec_id": "/pa/units/addon/railgun/railgun_weapon.json",
+        "aim_bone": "socket_aim",
+        "record_index": 0,
+        "muzzle_bone": "socket_muzzle"
+      }
+    ],
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/structure_small",
+        "effect_scale": 3
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
+        "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx",
+        "effect_scale": 4
+      },
+      "died": {
+        "audio_cue": "/SE/Death/structure_small",
+        "effect_scale": 3
+      }
+    },
+    "audio": {
+      "selection_response": {
+        "cue": "/SE/Selection/structure/artillery"
+      }
+    },
+    "lamps": [
+      {
+        "offset": [
+          0,
+          -33.63,
+          11.07
+        ],
+        "radius": 4,
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 2,
+        "bone": "bone_pitch"
+      }
+    ],
+    "selection_icon": {
+      "diameter": 36
+    },
+    "mesh_bounds": [
+      33.75,
+      50,
+      33.8346
+    ],
+    "placement_size": [
+      45,
+      45
+    ],
+    "TEMP_texelinfo": 26.6522
+  }

@@ -1,0 +1,22 @@
+{
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "tool_type": "TOOL_Weapon",
+  "ammo_id": "/pa/units/addon/dreadnought/ammo/dreadnought_missile_ammo.json",
+
+  "auto_attack": true,
+  "spread_fire": false,
+  "firing_standard_deviation": 4,
+
+  "rate_of_fire": 1,
+  "max_range": 300,
+  "yaw_rate": 180,
+  "pitch_rate": 180,
+  "yaw_range": 0,
+  "pitch_range": 0,
+  "firing_arc_yaw": 180,
+  "firing_arc_pitch": 180,
+  "target_layers": [
+    "Orbital"
+  ],
+  "fire_delay": 1
+}
